@@ -12,9 +12,14 @@
     <title>adRespect - Projekt</title>
 </head>
 <body>
-<header>
+<header>   
     <nav>
-        nawigacja
+        <div>
+            <img src="./images/giarddesign.svg" alt="Brand logo"/>
+        </div>
+        <div>
+            nawigacja
+        </div>        
     </nav>    
 </header>
 <main>
@@ -30,8 +35,10 @@
                             </p>
                         </div> 
                             <div class="hero-cta__wrapper-buttons">
-                            <button class="hero-cta__wrapper-buttons-cta">Skontaktuj się z nami</button>
-                            <button class="hero-cta__wrapper-buttons-cta">Zobacz nasze realizacje |icon|</button>
+                            <button class="hero-cta-button-first">Skontaktuj się z nami</button>
+                            <button class="hero-cta-button-second">Zobacz nasze realizacje 
+                                <img src="./images/Vectordown.svg" alt="Strzałka w dół" class="hero-cta-buttons-icon"/>
+                            </button>
                         </div>                   
                     </div> 
                 </div>
@@ -42,7 +49,7 @@
             <div class="ofert-wrapper">
                 <div class="ofert-container__text">
                     <span class="ofert-container__title">Oferta</span>
-                    <div>
+                    <div class="ofert-container__text-wrapper" > 
                         <p class="ofert-container__text-headline">
                             <span class="letter-spacing-3">Działamy</span> <span class="italic-font-style">kompleksowo</span>
                         </p>
@@ -51,14 +58,58 @@
                         </p>
                     </div>
                 </div>
-                <div class="ofert-container__card">
-                    <div class="ofert-card"></div>
-                    <div class="ofert-card"></div>
-                    <div class="ofert-card"></div>
+                <div class="card-wrapper">
+                    <div class="ofert-container-card">
+                        <div class="ofert-card">
+                            <div class="ofert-card-icon">
+                                <img src="./images/Iconpencil.svg" alt="Ikonka kredki" />
+                            </div>
+                            <div class="ofert-card-title">Projekty</div>
+                            <div class="ofert-card-descritpion">
+                                Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.
+                            </div>
+                            <div class="ofert-card-button">
+                                <button>
+                                    <span>Dowiedz się więcej</span> 
+                                    <img src="./images/Vector.svg" alt="Strzałka w prawo" class="icon-vector"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ofert-container-card">
+                        <div class="ofert-card">
+                            <div class="ofert-card-icon">
+                                <img src="./images/Iconeye.svg" alt="Ikonka oko" />
+                            </div>
+                            <div class="ofert-card-title">Wizualizacje</div>
+                            <div class="ofert-card-descritpion">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</div>
+                            <div class="ofert-card-button">
+                                <button>
+                                    <span>Dowiedz się więcej</span> 
+                                    <img src="./images/Vector.svg" alt="Strzałka w prawo" class="icon-vector"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ofert-container-card">
+                        <div class="ofert-card">
+                            <div class="ofert-card-icon">
+                                <img src="./images/Iconstar.svg" alt="Ikonka gwiazdki" />
+                            </div>
+                            <div class="ofert-card-title">Realizacje</div>
+                            <div class="ofert-card-descritpion">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</div>
+                            <div class="ofert-card-button">
+                                <button>
+                                    <span>Dowiedz się więcej</span> 
+                                    <img src="./images/Vector.svg" alt="Strzałka w prawo" class="icon-vector"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>    
                 </div>
             </div>
         </section>
-        <button class="ofert-more-button">Rozwiń |</button>
+        <button class="ofert-more-button">Rozwiń <img src="./images/Vectordownblack.svg" alt="Strzałka w dół" /></button>
     </div>
     <section id="realizations">
         <div class="realizations-constainer">
@@ -74,37 +125,44 @@
     </section>
 </main>
 <footer>
-<div>
-    <div class="footer-cta">
-        <div class="footer-cta-wrapper">
+    <div class="footer-wrapper">
+    <div class="footer-container">
+        <div class="footer-text">
+        <div class="footer-cta">
+            <div class="footer-cta-container">
             <div class="footer-cta-brand">
-                <img src="./images/giarddesign.svg" alt="Brand logo" /> 
-            </div>
-            <div class="footer-cta-content">
+                <img src="./images/giarddesignlight-footer.svg" alt="Brand logo" /> 
+            </div> 
+            <div class="footer-cta-button">
                 <p>Daj znać, co możemy dla Ciebie zrobić!</p>
-                <button class="footer-contact-button">Skontaktuj się z nami</button> 
-            </div>
-            
-        </div>
-        <div class="footer-line"></div>
-        <div class="footer-menu">
-            <div class="footer-menu-social">               
-                <span>Kontakt</span>
-                <span>Instagram</span>
-                <span>Facebook</span>
-                <span>LinkedIn</span>              
-            </div>
-            <div class="footer-menu-contact">
-                <div>000-000-000</div>
-                <div>giarddesign@kontakt.pl</div>               
+                <button>Skontaktuj się z nami</button>
+            </div> 
             </div>
         </div>
+        <div class="footer-social">
+            <div class="footer-line"></div>
+            <div class="footer-social-wrapper">
+            <div class="footer-social-item">
+                <p>Kontakt</p>
+                <p>Instagram</p>
+                <p>Facebook</p>
+                <p>LinkedIn</p>
+            </div>
+            <div class="footer-social-contact">
+                <p>000-000-000</p>
+                <p>giarddesign@kontakt.pl</p> 
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="footer-copyright-text">Prawa zastrzeżone © 2022</div>
+            <div class="footer-copyright-images">made by 
+                <img src="./images/logo-full-light.svg" alt="Brand logo" class="footer-copyright-brand"/>
+            </div>
+        </div> 
+    </div>  
     </div>
-</div>
-<div class="footer-copyright">
-    <div>Prawa zastrzeżone © 2022</div>
-    <div>made by <img src="./images/logo-full-light.svg" alt="Brand logo" /></div>
-</div>
 </footer>
 <script type="text/javascript" src="js/script.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
