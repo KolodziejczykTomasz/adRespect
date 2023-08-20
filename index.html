@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;600&display=swap');
-        </style> 
+    </style> 
+    
+    <script type="text/javascript" src="./js/script.js"></script>   
     <title>adRespect - Projekt</title>
 </head>
 <body>
@@ -68,98 +72,200 @@
         </div>
       </nav>   
 </header>
-<main>
-    <div class="background-color-section">
-        <section id="hero">
-            <div class="hero-cta">
-                <div class="hero-cta__wrapper">
-                    <div class="hero-cta__wrapper-text">
-                        <div class="hero-cta__wrapper-text__container">
-                            <p class="hero-cta__wrapper-text__headline">Nowoczesna aranżacja </p> 
-                            <p class="hero-cta__wrapper-text__headline">Twojego ogrodu </p>                           
-                            
-                            <p class="hero-cta__wrapper-text">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.                            
-                            </p>
-                        </div> 
-                        <div class="hero-cta__wrapper-buttons">
-                            <button class="hero-cta-button-first">Skontaktuj się z nami</button>
-                            <button class="hero-cta-button-second">Zobacz nasze realizacje 
-                                <img src="./images/Vectordown.svg" alt="Strzałka w dół" class="hero-cta-buttons-icon"/>
+<main>      
+    <section id="hero">
+        <div id="carousel" class="carousel slide show">
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                <div class="carousel-wrapper">   
+                    <div class="hero-cta">
+                        <div class="hero-cta__wrapper">
+                            <div class="hero-cta__wrapper-text">
+                                <div class="hero-cta__wrapper-text__container">
+                                    <p class="hero-cta__wrapper-text__headline">Nowoczesna aranżacja </p> 
+                                    <p class="hero-cta__wrapper-text__headline">Twojego ogrodu </p>                           
+                                    
+                                    <p class="hero-cta__wrapper-text">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.                            
+                                    </p>
+                                </div> 
+                                <div class="hero-cta__wrapper-buttons">
+                                    <button class="hero-cta-button-first">Skontaktuj się z nami</button>
+                                    <button class="hero-cta-button-second">Zobacz nasze realizacje 
+                                        <img src="./images/Vectordown.svg" alt="Strzałka w dół" class="hero-cta-buttons-icon"/>
+                                    </button>
+                                </div>                   
+                            </div> 
+                        </div>                            
+                    </div>
+                    <div class="hero-slider">
+                        <img src="./images/Photoslider.png" alt="Slajd" />                            
+                    </div>                        
+                </div> 
+                </div>
+                <div class="carousel-item">
+                <div class="carousel-wrapper">   
+                    <div class="hero-cta">
+                        <div class="hero-cta__wrapper">
+                            <div class="hero-cta__wrapper-text">
+                                <div class="hero-cta__wrapper-text__container">
+                                    <p class="hero-cta__wrapper-text__headline">Nowoczesna aranżacja </p> 
+                                    <p class="hero-cta__wrapper-text__headline">Twojego ogrodu </p>                           
+                                    
+                                    <p class="hero-cta__wrapper-text">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.                            
+                                    </p>
+                                </div> 
+                                <div class="hero-cta__wrapper-buttons">
+                                    <button class="hero-cta-button-first">Skontaktuj się z nami</button>
+                                    <button class="hero-cta-button-second">Zobacz nasze realizacje 
+                                        <img src="./images/Vectordown.svg" alt="Strzałka w dół" class="hero-cta-buttons-icon"/>
+                                    </button>
+                                </div>                   
+                            </div> 
+                        </div>                            
+                    </div>
+                    <div class="hero-slider">
+                        <img src="./images/Photoslider.png" alt="Slajd" />                            
+                    </div>                        
+                </div> 
+                </div>                  
+            </div>
+            <div class="carousel-menu">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <img src="./images/ArrowLeft.svg" alt="Strzałka w lewo" class="menu-arrow-left"/>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <img src="./images/ArrowRight.svg" alt="Strzałka w prawo" class="menu-arrow-right"/>
+            </button>
+            </div>
+            </div>  
+    </section>
+    <section id="ofert" class="show">
+        <div class="ofert-wrapper ">
+            <div class="card-wrapper">
+                <div class="ofert-container__text">
+                    <span class="ofert-container__title">Oferta</span>
+                    <div class="ofert-container__text-wrapper" > 
+                        <p class="ofert-container__text-headline">
+                            <span class="letter-spacing-3">Działamy</span> 
+                            <span class="italic-font-style">kompleksowo</span>
+                        </p>
+                        <p class="ofert-container__text-description">
+                            Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper offertFirst">
+                <div class="ofert-container-card">
+                    <div class="ofert-card">
+                        <div class="ofert-card-icon">
+                            <img src="./images/Iconpencil.svg" alt="Ikonka kredki" />
+                        </div>
+                        <div class="ofert-card-title">Projekty</div>
+                        <div class="ofert-card-descritpion">
+                            Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.
+                        </div>
+                        <div class="ofert-card-button">
+                            <button>
+                                <span>Dowiedz się więcej</span> 
+                                <img src="./images/Vector.svg" alt="Strzałka w prawo" class="icon-vector"/>
                             </button>
-                        </div>                   
-                    </div> 
+                        </div>
+                    </div>
                 </div>
+                <div class="ofert-container-card offertSecond">
+                    <div class="ofert-card">
+                        <div class="ofert-card-icon">
+                            <img src="./images/Iconeye.svg" alt="Ikonka oko" />
+                        </div>
+                        <div class="ofert-card-title">Wizualizacje</div>
+                        <div class="ofert-card-descritpion">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</div>
+                        <div class="ofert-card-button">
+                            <button>
+                                <span>Dowiedz się więcej</span> 
+                                <img src="./images/Vector.svg" alt="Strzałka w prawo" class="icon-vector"/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ofert-container-card offertThird">
+                    <div class="ofert-card">
+                        <div class="ofert-card-icon">
+                            <img src="./images/Iconstar.svg" alt="Ikonka gwiazdki" />
+                        </div>
+                        <div class="ofert-card-title">Realizacje</div>
+                        <div class="ofert-card-descritpion">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</div>
+                        <div class="ofert-card-button">
+                            <button>
+                                <span>Dowiedz się więcej</span> 
+                                <img src="./images/Vector.svg" alt="Strzałka w prawo" class="icon-vector"/>
+                            </button>
+                        </div>
+                    </div>
+                </div>    
             </div>
-            <div class="hero-slider"></div>
-        </section>
-        <section id="ofert">
-            <div class="ofert-wrapper">
-                <div class="card-wrapper">
-                    <div class="ofert-container__text">
-                        <span class="ofert-container__title">Oferta</span>
-                        <div class="ofert-container__text-wrapper" > 
-                            <p class="ofert-container__text-headline">
-                                <span class="letter-spacing-3">Działamy</span> <span class="italic-font-style">kompleksowo</span>
-                            </p>
-                            <p class="ofert-container__text-description">
-                                Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-wrapper">
-                    <div class="ofert-container-card">
-                        <div class="ofert-card">
-                            <div class="ofert-card-icon">
-                                <img src="./images/Iconpencil.svg" alt="Ikonka kredki" />
-                            </div>
-                            <div class="ofert-card-title">Projekty</div>
-                            <div class="ofert-card-descritpion">
-                                Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.
-                            </div>
-                            <div class="ofert-card-button">
-                                <button>
-                                    <span>Dowiedz się więcej</span> 
-                                    <img src="./images/Vector.svg" alt="Strzałka w prawo" class="icon-vector"/>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ofert-container-card">
-                        <div class="ofert-card">
-                            <div class="ofert-card-icon">
-                                <img src="./images/Iconeye.svg" alt="Ikonka oko" />
-                            </div>
-                            <div class="ofert-card-title">Wizualizacje</div>
-                            <div class="ofert-card-descritpion">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</div>
-                            <div class="ofert-card-button">
-                                <button>
-                                    <span>Dowiedz się więcej</span> 
-                                    <img src="./images/Vector.svg" alt="Strzałka w prawo" class="icon-vector"/>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ofert-container-card">
-                        <div class="ofert-card">
-                            <div class="ofert-card-icon">
-                                <img src="./images/Iconstar.svg" alt="Ikonka gwiazdki" />
-                            </div>
-                            <div class="ofert-card-title">Realizacje</div>
-                            <div class="ofert-card-descritpion">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</div>
-                            <div class="ofert-card-button">
-                                <button>
-                                    <span>Dowiedz się więcej</span> 
-                                    <img src="./images/Vector.svg" alt="Strzałka w prawo" class="icon-vector"/>
-                                </button>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-        </section>
-        <button class="ofert-more-button">Rozwiń <img src="./images/Vectordownblack.svg" alt="Strzałka w dół" /></button>
-    </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-image"> 
+            <img src="./images/Photoabout.png" alt="O nas" />
+        </div>
+        <div class="about-description"> 
+          <div class="about-content"> 
+            <span>O firmie</span>
+            <p class="about-title">Tworzymy</p>
+            <p class="about-subtitle">z pasją </p>
+            <p class="about-text">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>   
+            <button class="about-button">Poznaj nas bliżej 
+                <img class="icon-right" src="./images/ArrowRight.svg" alt="Strzałka w prawo" />
+            </button>
+        </div>
+        </div>
+      </section>
+    <section id="gallery" class="gallery">            
+        <div id="gallery-background" class="background-gallery shadow-gallery-show">     
+            <div class="gallery-header">
+                <div class="gallery-header-wrapper">
+                    <span>Realizacje</span> 
+                    <p>Nasze <span> projekty</span></p>
+                </div> 
+            </div>    
+            <div id="galleryWrapper" class="gallery-wrapper gallery-wrapper-hide" >
+                <img class="item" src="./images/gallery-png/Photo09.png" alt="Zdjęcie realizowanego projektu"/>
+                <img class="item" src="./images/gallery-png/Photo07.png" alt="Zdjęcie realizowanego projektu"/>            
+                <img class="item" src="./images/gallery-png/Photo03.png" alt="Zdjęcie realizowanego projektu"/>
+                <img class="item" src="./images/gallery-png/Photo04.png" alt="Zdjęcie realizowanego projektu"/>
+                <img class="item" src="./images/gallery-png/Photo08.png" alt="Zdjęcie realizowanego projektu"/>
+                <img class="item" src="./images/gallery-png/Photo06.png" alt="Zdjęcie realizowanego projektu"/>
+                <img class="item" src="./images/gallery-png/Photo05.png" alt="Zdjęcie realizowanego projektu"/>
+                <img class="item" src="./images/gallery-png/Photo01.png" alt="Zdjęcie realizowanego projektu"/>
+                <img class="item" src="./images/gallery-png/Photo02.png" alt="Zdjęcie realizowanego projektu"/>  
+                <img class="item" src="./images/gallery-png/Photo09.png" alt="Zdjęcie realizowanego projektu"/>
+                <img class="item" src="./images/gallery-png/Photo07.png" alt="Zdjęcie realizowanego projektu"/>            
+                <img class="item" src="./images/gallery-png/Photo03.png" alt="Zdjęcie realizowanego projektu"/>
+                <img class="item" src="./images/gallery-png/Photo04.png" alt="Zdjęcie realizowanego projektu"/>
+                <img class="item" src="./images/gallery-png/Photo08.png" alt="Zdjęcie realizowanego projektu"/>
+                <img class="item" src="./images/gallery-png/Photo06.png" alt="Zdjęcie realizowanego projektu"/>
+                <img class="item" src="./images/gallery-png/Photo05.png" alt="Zdjęcie realizowanego projektu"/>
+                <img class="item" src="./images/gallery-png/Photo01.png" alt="Zdjęcie realizowanego projektu"/>
+                <img class="item" src="./images/gallery-png/Photo02.png" alt="Zdjęcie realizowanego projektu"/>           
+                 
+            </div>            
+        </div>
+        <div class="ofert-wrapper-button">
+            <button class="ofert-more-button-down displayBlockButton" id="button-more-down" onClick="toogleShowGallery()">Rozwiń 
+                <img src="./images/Vectordownblack.svg" alt="Strzałka w dół" />
+            </button>
+            <button class="ofert-more-button-up displayNoneButton" id="button-more-up" onClick="toogleShowGallery()">Zwiń 
+                <img src="./images/Vectordownblack.svg" alt="Strzałka w dół" class="Icondropup"/>
+            </button>
+        </div>
+        <div class="popup-image">
+            <span>&times;</span>
+            <img class="item" src="" alt="Zdjęcie realizowanego projektu"/>
+            
+        </div>
+    </section>      
     <section id="realizations">
         <div class="realizations-constainer">
             <div class="realizations-headline">
@@ -171,6 +277,7 @@
                 <button class="realizations-button">Instagram</button>
             </div>
         </div>
+        
     </section>
 </main>
 <footer>
@@ -213,10 +320,87 @@
     </div>  
     </div>
 </footer>
-<script type="text/javascript" src="js/script.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+
+<script>
+   var macy = Macy({
+  container: '.gallery-wrapper',
+  mobileFirst: true,
+  columns: 1,
+  breakAt: {
+    400: 1,
+    700: 2,
+    1100: 3,
+  },
+  margin: {
+    x: 20,
+    y: 20,
+  }
+})
+
+
+</script>
+<script>
+    function toogleShowGallery() {
+    const gallery = document.getElementById("gallery");
+    const galleryWrapper = document.getElementById("galleryWrapper")
+    const shadow = document.getElementById("gallery-background");
+    const btnMoreDown = document.getElementById("button-more-down");  
+    const btnMoreUp = document.getElementById("button-more-up");   
+    gallery.classList.toggle("show-gallery"); 
+    shadow.classList.toggle("shadow-gallery-hide");
+    btnMoreDown.classList.toggle("button-white");
+    btnMoreDown.classList.toggle("displayNoneButton");
+    btnMoreUp.classList.toggle('displayNoneButton');
+    galleryWrapper.classList.toggle("gallery-wrapper-hide");
+    } 
+</script>
+<script>
+    document.querySelectorAll('.gallery-wrapper img').forEach(image =>{
+        image.onclick = () => {
+            document.querySelector('.popup-image').style.display = 'block';
+            document.querySelector('.popup-image img').src=image.getAttribute('src');
+            document.querySelector('#ofert').classList.toggle('hide');
+            document.querySelector('#carousel').classList.toggle('hide');
+        }
+    });
+    document.querySelector('.popup-image span').onclick = ()=> {
+        document.querySelector('.popup-image').style.display = 'none';
+        document.querySelector('#ofert').classList.toggle('hide');
+        document.querySelector('#carousel').classList.toggle('hide');
+    }
+</script>
+<script>
+    const offertFirst = document.querySelector('.offertFirst');
+    const offertSecond = document.querySelector('.offertSecond');
+    const offertThird = document.querySelector('.offertThird');
+    
+
+    window.addEventListener("scroll", reveal);
+
+reveal();
+
+
+function reveal() {
+    offertFirst.classList.add('animate__animated', 'animate__fadeInUp');
+    offertFirst.style.setProperty('--animate-duration', '1s',"--animate-repeat: 2;");
+    offertSecond.classList.add('animate__animated', 'animate__fadeInUp');
+    offertSecond.style.setProperty('--animate-duration', '1.2s',"--animate-repeat: 2;");
+    offertThird.classList.add('animate__animated', 'animate__fadeInUp');
+    offertThird.style.setProperty('--animate-duration', '1.4s',"--animate-repeat: 2;");
+}
+
+
+
+
+
+
+
+</script>
 </body>
 </html>
