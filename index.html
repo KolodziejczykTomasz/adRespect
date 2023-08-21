@@ -17,8 +17,8 @@
 </head>
 <body>
 <header>   
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+    <nav id="home"class="navbar navbar-expand-lg show">
+        <a class="navbar-brand" href="#home">
             <img src="./images/giarddesign.svg" width='114.368' height='19'  alt="Logo firmy">
           </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,13 +37,13 @@
                 <a class="dropdown-item" href="#">Oferta 2</a>                
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">O firmie</a>
+              <a class="nav-link" href="#about">O firmie</a>
             </li> 
             <li class="nav-item">
-                <a class="nav-link" href="#">Realizacje</a>
+                <a class="nav-link" href="#gallery">Realizacje</a>
             </li> 
             <li class="nav-item">
-                <a class="nav-link" href="#">Kontakt</a>
+                <a class="nav-link" href="#footer">Kontakt</a>
             </li>            
           </ul>
           <form>  
@@ -74,7 +74,7 @@
 </header>
 <main>      
     <section id="hero">
-        <div id="carousel" class="carousel slide show">
+        <div id="carousel" class="carousel slide hide">
             <div class="carousel-inner ">
                 <div class="carousel-item active">
                 <div class="carousel-wrapper">   
@@ -83,8 +83,7 @@
                             <div class="hero-cta-wrapper-text">
                                 <div class="hero-cta-wrapper-text-container">
                                     <p class="hero-cta-wrapper-text-headline">Nowoczesna aranżacja </p> 
-                                    <p class="hero-cta-wrapper-text-headline">Twojego ogrodu </p>                           
-                                    
+                                    <p class="hero-cta-wrapper-text-headline">Twojego ogrodu </p>  
                                     <p class="hero-cta-wrapper-text">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.                            
                                     </p>
                                 </div> 
@@ -211,15 +210,15 @@
             <img src="./images/Photoabout.png" alt="O nas" />
         </div>
         <div class="about-description"> 
-          <div class="about-content"> 
-            <span>O firmie</span>
-            <p class="about-title">Tworzymy</p>
-            <p class="about-subtitle">z pasją </p>
-            <p class="about-text">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>   
-            <button class="about-button">Poznaj nas bliżej 
-                <img class="icon-right" src="./images/ArrowRight.svg" alt="Strzałka w prawo" />
-            </button>
-        </div>
+            <div class="about-content"> 
+                <span>O firmie</span>
+                <p class="about-title">Tworzymy</p>
+                <p class="about-subtitle">z pasją </p>
+                <p class="about-text">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>   
+                <button class="about-button">Poznaj nas bliżej 
+                    <img class="icon-right" src="./images/ArrowRight.svg" alt="Strzałka w prawo" />
+                </button>
+            </div>
         </div>
       </section>
     <section id="gallery" class="gallery">            
@@ -269,7 +268,10 @@
         <div class="realizations-constainer">
             <div class="realizations-headline">
                 <span class="letter-spacing-2 realizations-cta" >Zostańmy w kontakcie!</span> 
-                <span><span class="letter-spacing-2">Znajdziesz nas na </span><span class="italic-font-style letter-spacing-1" >Instagramie</span>.</span>                
+                <span>
+                    <span class="letter-spacing-2">Znajdziesz nas na</span>
+                    <span class="italic-font-style letter-spacing-1" >Instagramie</span>.
+                </span>                
             </div>
             <div class="realizations-headline-text">
                 <span>Śledź nasze </span><span>najnowsze realizacje!</span>
@@ -278,7 +280,7 @@
         </div>        
     </section>
 </main>
-<footer>
+<footer id="footer">
     <div class="footer-wrapper">
     <div class="footer-container">
         <div class="footer-text">
@@ -297,14 +299,14 @@
             <div class="footer-line"></div>
             <div class="footer-social-wrapper">
             <div class="footer-social-item">
-                <p>Kontakt</p>
-                <p>Instagram</p>
-                <p>Facebook</p>
-                <p>LinkedIn</p>
+                <p><a href="#" target="_blank" rel="noopener noreferrer">Kontakt</a></p>
+                <p><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+                <p><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+                <p><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
             </div>
             <div class="footer-social-contact">
-                <p>000-000-000</p>
-                <p>giarddesign@kontakt.pl</p> 
+                <p><a href="tel:000-000-000">000-000-000</a></p>
+                <p><a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a></p> 
             </div>
             </div>
         </div>
@@ -318,7 +320,6 @@
     </div>  
     </div>
 </footer>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -349,13 +350,15 @@
     const galleryWrapper = document.getElementById("galleryWrapper")
     const shadow = document.getElementById("gallery-background");
     const btnMoreDown = document.getElementById("button-more-down");  
-    const btnMoreUp = document.getElementById("button-more-up");   
+    const btnMoreUp = document.getElementById("button-more-up"); 
+    const nav = document.getElementById("home");  
     gallery.classList.toggle("show-gallery"); 
     shadow.classList.toggle("shadow-gallery-hide");
     btnMoreDown.classList.toggle("button-white");
     btnMoreDown.classList.toggle("displayNoneButton");
     btnMoreUp.classList.toggle('displayNoneButton');
     galleryWrapper.classList.toggle("gallery-wrapper-hide");
+    nav.classList.toggle("hide");
     } 
 </script>
 <script>
@@ -392,13 +395,6 @@ function reveal() {
     offertThird.classList.add('animate__animated', 'animate__fadeInUp');
     offertThird.style.setProperty('--animate-duration', '1.4s',"--animate-repeat: 2;");
 }
-
-
-
-
-
-
-
 </script>
 </body>
 </html>
