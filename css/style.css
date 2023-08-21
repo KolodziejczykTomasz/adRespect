@@ -210,7 +210,7 @@ nav {
   align-items: center;
   gap: 8px; 
   height: 50px;
-  border-color: var(--green); 
+  border: 2px solid var(--green); 
   border-radius: 200px;
   color: var(--green, #1B5B31);
   text-align: center;
@@ -914,28 +914,22 @@ footer {
 }
 @media (max-width: 480px) {
 .ofert-container-text-headline,
-.hero-cta-wrapper-text-headline,
-.ofert-card-descritpion {
-  max-width: 100%;
+.hero-cta-wrapper-text-headline
+{
+  display: block;
+  max-width: 100vw;
+  height: auto;
   word-wrap: break-word;
 }
 
+
 }
+
+
+
 @media (max-width: 768px) {
   .popup-image img {
     width: 95%;
-  }
-
-  
-  .card-wrapper {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    padding: 50px 10px 70px 10px;
-    margin:0 10px;
-  }
-  .card-header-wrapper {
-    padding: 0 10px 20px 10px;
   }
   .ofert-container-card {
     
@@ -943,10 +937,43 @@ footer {
     margin: 0 10px;  
     
   }
- 
+  .card-header-wrapper {
+    width: 100%; 
+    padding: 0 10px;
+  }
   .ofert-container-text {
     margin: 70px auto 10px auto;
-    text-align: left;    
+    text-align: left;  
+    width: 100%;  
+  }
+
+.ofert-card-button {
+  width: 100%;  
+  border: 2px solid red;  
+}
+
+.ofert-container-card, 
+.ofert-card-descritpion {
+  width: 100%;  
+  border: 4px solid red;  
+  word-wrap: break-word;
+}
+
+.ofert-container-text-headline {
+  width: 80%;
+}
+.ofert-card{
+width: 100%;
+}
+  .card-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 50px 30px 70px 10px;
+  
+  }
+  .card-header-wrapper {
+    padding: 0 10px 20px 10px;
   }
 
 
@@ -973,20 +1000,6 @@ footer {
     flex-direction: column;
   }
 
-.ofert-container-card, 
-.ofert-card-descritpion,
-.ofert-card-button {
-  width: 95%;  
-  border: 2px solid red;  
-}
-
-
-.ofert-card-descritpion {
-  width: 75vw;
-}
-.ofert-container-text-headline {
-  width: 80%;
-}
 
   .gallery-header-wrapper,   
   .realizations-constainer {  
@@ -1075,7 +1088,19 @@ footer {
 
 }
 }
+@media (min-width: 769px ) and (max-width:1024px){
+  .ofert-container-card{
+    width: 100%;
+  }
+  .ofert-container-card p, .ofert-card-descritpion p, .ofert-card{
 
+    width: 100%;
+  }
+
+  .ofert-container-card {
+    gap:20px;
+  }
+}
 @media (max-width: 1024px) {
   #hero, .hero-cta-wrapper {
     padding: 0;
@@ -1167,14 +1192,87 @@ footer {
   }
 
 }
-@media (max-width: 1399px) {
-  .card-wrapper,.card-header-wrapper {
-    flex-wrap: wrap;
-    padding: 70px;
-  } 
-}
+
 
 @media (min-width: 1400px) {
   .card-wrapper,.card-header-wrapper {
     flex-wrap: nowrap;} 
 }
+
+@media (min-width: 1025px ) and (max-width:1280px){
+  .about-image {
+    width: 30%;
+    border: 2px solid grey;
+    border: 1px solid grey;
+  }
+  .about-image img {
+    width: 100%;
+    object-fit: contain;border: 2px solid grey;
+  }
+  .about-description {
+    width: 70%;
+  }
+  .ofert-wrapper {
+   padding-bottom: 70px;
+  }
+}
+
+
+@media (min-width: 1025px ) and (max-width:1300px){
+  .about-image, .hero-slider, .carousel-menu, .hero-slider img {
+    display: none;
+  }
+  .about-description, .about-content, .hero-slider {
+    width: 100%;
+  }
+
+  #hero, .hero-cta-wrapper, .hero-cta-wrapper-text-container,.hero-cta-wrapper-text {
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-cta-wrapper-text-container {
+padding-top: 70px;
+}
+.carousel-wrapper  {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: auto;
+  width: 100%;
+}
+
+.hero-cta-wrapper-buttons {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+}
+}
+
+@media (min-width: 1025px ) and (max-width:1430px){
+  .hero-cta {
+    width: auto;
+  }
+}
+  @media (min-width: 1300px ) and (max-width:1430px){
+ .hero-slider, .carousel-wrapper, .hero-slider img {
+      width: 100vw;
+    }
+    .hero-slider img {
+      object-fit: cover;
+    }
+
+    .ofert-wrapper {
+      padding-bottom: 70px;
+     }
+}
+
+@media (min-width: 768px ) and (max-width:1400px){
+
+ 
+     .ofert-wrapper {
+       padding-bottom: 70px;
+      }
+ }
